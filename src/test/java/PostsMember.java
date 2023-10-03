@@ -58,7 +58,7 @@ public class PostsMember {
         driver.get("Profile URL");
 
         System.out.println(" Verify that Profile stat cont is visible");
-        WebElement profileStatCount = driver.findElement(By.id("profile-stat-count"));
+        WebElement profileStatCount = driver.findElement(By.cssSelector("profile-stat-count"));
         Assert.assertTrue(profileStatCount.isDisplayed());
 
     }
